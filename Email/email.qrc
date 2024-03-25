@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/email.png</file>
+        <file>image/bold.png</file>
+        <file>image/italic.png</file>
+        <file>image/strikeout.png</file>
+        <file>image/under.png</file>
+        <file>image/bullets.png</file>
+        <file>image/center.png</file>
+        <file>image/date.png</file>
+        <file>image/decindent.png</file>
+        <file>image/fontcolor.png</file>
+        <file>image/image.png</file>
+        <file>image/incindent.png</file>
+        <file>image/justify.png</file>
+        <file>image/left.png</file>
+        <file>image/linespace.png</file>
+        <file>image/right.png</file>
+        <file>image/table.png</file>
+        <file>image/hyperlink.png</file>
+    </qresource>
+</RCC>

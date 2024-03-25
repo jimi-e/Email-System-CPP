@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/test.png</file>
+        <file>res/ymn.gif</file>
+        <file>res/see.png</file>
+        <file>res/see_hover.png</file>
+        <file>res/lock1.png</file>
+        <file>res/lock2.png</file>
+        <file>res/flower1.png</file>
+        <file>res/flower2.png</file>
+        <file>res/line.png</file>
+        <file>res/logo.png</file>
+        <file>res/file.png</file>
+        <file>res/file (1).png</file>
+        <file>res/file (3).png</file>
+        <file>res/fileup.png</file>
+        <file>res/my_icon.jpg</file>
+        <file>res/white.png</file>
+        <file>res/close.png</file>
+        <file>res/delete.png</file>
+        <file>res/logo_wthie.png</file>
+        <file>res/favorite.png</file>
+        <file>res/forward.png</file>
+        <file>res/reply.png</file>
+    </qresource>
+</RCC>

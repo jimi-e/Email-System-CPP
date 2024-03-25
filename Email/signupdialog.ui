@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignupDialog</class>
+ <widget class="QDialog" name="SignupDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>380</width>
+    <height>420</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>380</width>
+    <height>420</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>380</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>400</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QLineEdit
+{background-color: rgb(255, 255, 255);font:14px;}
+
+.QLabel
+{
+pointer-events:none;
+font: 75 11pt &quot;Ubuntu Mono&quot;;
+}
+.QPushButton
+{
+border-style:none;
+background-image: url(:/res/see.png);
+background-color: none;}
+
+.QPushButton#pushButton:pressed 
+{border-style:none;
+background-image: url(:/res/see.png);
+background-color: none;}
+.QPushButton#pushButton_2:pressed 
+{border-style:none;
+background-image: url(:/res/see.png);
+background-color: none;}
+
+.QPushButton:hover
+{border-style:none;
+background-image: url(:/res/see_hover.png);
+background-color: none;}</string>
+   </property>
+   <widget class="QLabel" name="label_usr_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt&quot;Ubuntu Mono&quot;; color:#2e3436;&quot;&gt;注册账户&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_usr">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>85</y>
+      <width>320</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>仅限数字、字母、下划线</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cpw">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>270</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#2e3436;&quot;&gt;确认密码&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_usr">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>59</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#2e3436;&quot;&gt;用户名 &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_pw">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>225</y>
+      <width>320</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>8-15位，包括数字、大小写字母和下划线</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_cpw">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>295</y>
+      <width>320</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>请再次输入您的密码</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>355</y>
+      <width>380</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+.QPushButton
+{
+font: 25 15pt &quot;Umpush&quot;;
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+padding:15px;
+min-height:15px;
+border-radius:0px;
+background:rgb(85, 87, 83);
+}
+
+.QPushButton::hover{
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+padding:15px;
+min-height:15px;
+border-radius:0px;
+background:rgb(136, 138, 133);
+}
+
+QPushButton#pushButton_cancel:pressed,#pushButton_confirm:pressed
+{
+	background-color: rgb(46, 52, 54);
+}
+
+</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_cancel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>190</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(211, 215, 207);
+</string>
+     </property>
+     <property name="text">
+      <string>取 消</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_confirm">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>190</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>65</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(211, 215, 207);
+</string>
+     </property>
+     <property name="text">
+      <string>确 认</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_nn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#2e3436;&quot;&gt;昵称&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_nn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>155</y>
+      <width>320</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>4</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string>仅限数字、字母、下划线，最多12位</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pw">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>199</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#2e3436;&quot;&gt;密码&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>323</x>
+      <y>230</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QPushButton
+{
+height:20px;
+width:20px;
+border-style:none;
+background-image: url(:/res/see.png);
+background-repeat:none;
+background-color: none;}
+
+.QPushButton#pushButton:pressed 
+{border-style:none;
+background-image: url(:/res/see.png);
+background-repeat:none;
+background-color: none;}
+
+.QPushButton:hover
+{border-style:none;
+background-image: url(:/res/see_hover.png);
+background-repeat:none;
+background-color: none;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>323</x>
+      <y>300</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QPushButton
+{
+height:20px;
+width:20px;
+border-style:none;
+background-image: url(:/res/see.png);
+background-repeat:none;
+background-color: none;}
+
+.QPushButton#pushButton_2:pressed 
+{border-style:none;
+background-image: url(:/res/see.png);
+background-repeat:none;
+background-color: none;}
+
+.QPushButton:hover
+{border-style:none;
+background-image: url(:/res/see_hover.png);
+background-repeat:none;
+background-color: none;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_invisible">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <zorder>label_cpw</zorder>
+   <zorder>label_pw</zorder>
+   <zorder>label_nn</zorder>
+   <zorder>label_usr_2</zorder>
+   <zorder>label_usr</zorder>
+   <zorder>lineEdit_pw</zorder>
+   <zorder>lineEdit_nn</zorder>
+   <zorder>widget</zorder>
+   <zorder>lineEdit_usr</zorder>
+   <zorder>lineEdit_cpw</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>label_invisible</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

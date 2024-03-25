@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>853</width>
+    <height>684</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>853</width>
+    <height>684</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{
+border:10px;
+border-radius:40px;
+	background-color: rgb(85, 87, 83);
+}
+
+.QLineEdit
+{background-color: rgb(255, 255, 255);font:14px;}
+
+.QLabel
+{
+pointer-events:none;
+font: 75 11pt &quot;Ubuntu Mono&quot;;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_6">
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>666</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(136, 138, 133);
+background-color: rgb(85, 87, 83);
+border:10px;
+border-radius:40px;</string>
+     </property>
+     <widget class="QPushButton" name="b_recv">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>130</y>
+        <width>230</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{background-color: rgb(46, 52, 54); }
+
+
+.QPushButton
+{
+background-color: rgb(46, 52, 54);}
+
+.QPushButton:hover
+{
+background-color: rgb(136, 138, 133);}
+
+.QPushButton
+{
+font: 25 13pt &quot;Umpush&quot;;
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(85, 87, 83);
+}
+
+.QPushButton::hover
+{
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(136, 138, 133);
+}
+.QPushButton#b_recv:pressed
+{
+	background-color: rgb(85, 87, 83);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>收件箱</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_write">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>200</y>
+        <width>230</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{background-color: rgb(46, 52, 54); }
+
+
+.QPushButton
+{
+background-color: rgb(46, 52, 54);}
+
+.QPushButton:hover
+{
+background-color: rgb(136, 138, 133);}
+
+.QPushButton
+{
+font: 25 13pt &quot;Umpush&quot;;
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(85, 87, 83);
+}
+
+.QPushButton::hover
+{
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(136, 138, 133);
+}
+.QPushButton#b_write:pressed
+{
+	background-color: rgb(85, 87, 83);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>新邮件</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_send">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>270</y>
+        <width>230</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{background-color: rgb(46, 52, 54); }
+
+
+.QPushButton
+{
+background-color: rgb(46, 52, 54);}
+
+.QPushButton:hover
+{
+background-color: rgb(136, 138, 133);}
+
+.QPushButton
+{
+font: 25 13pt &quot;Umpush&quot;;
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(85, 87, 83);
+}
+
+.QPushButton::hover
+{
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(136, 138, 133);
+}
+.QPushButton#b_send:pressed
+{
+	background-color: rgb(85, 87, 83);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>发件箱</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_draft">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>340</y>
+        <width>230</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{background-color: rgb(46, 52, 54); }
+
+
+.QPushButton
+{
+background-color: rgb(46, 52, 54);}
+
+.QPushButton:hover
+{
+background-color: rgb(136, 138, 133);}
+
+.QPushButton
+{
+font: 25 13pt &quot;Umpush&quot;;
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(85, 87, 83);
+}
+
+.QPushButton::hover
+{
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(136, 138, 133);
+}
+.QPushButton#b_draft:pressed
+{
+	background-color: rgb(85, 87, 83);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>草稿箱</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_bin">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>410</y>
+        <width>230</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{background-color: rgb(46, 52, 54); }
+
+
+.QPushButton
+{
+background-color: rgb(46, 52, 54);}
+
+.QPushButton:hover
+{
+background-color: rgb(136, 138, 133);}
+
+.QPushButton
+{
+font: 25 13pt &quot;Umpush&quot;;
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(85, 87, 83);
+}
+
+.QPushButton::hover
+{
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(136, 138, 133);
+}
+.QPushButton#b_bin:pressed
+{
+	background-color: rgb(85, 87, 83);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>回收站</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_favor">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>480</y>
+        <width>230</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{background-color: rgb(46, 52, 54); }
+
+
+.QPushButton
+{
+background-color: rgb(46, 52, 54);}
+
+.QPushButton:hover
+{
+background-color: rgb(136, 138, 133);}
+
+.QPushButton
+{
+font: 25 13pt &quot;Umpush&quot;;
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(85, 87, 83);
+}
+
+.QPushButton::hover
+{
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(136, 138, 133);
+}
+.QPushButton#b_favor:pressed
+{
+	background-color: rgb(85, 87, 83);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>切换账号</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_exit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>550</y>
+        <width>230</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{background-color: rgb(46, 52, 54); }
+
+
+.QPushButton
+{
+background-color: rgb(46, 52, 54);}
+
+.QPushButton:hover
+{
+background-color:rgb(85, 87, 83)}
+
+.QPushButton
+{
+font: 25 13pt &quot;Umpush&quot;;
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(85, 87, 83);
+}
+
+.QPushButton::hover
+{
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(136, 138, 133);
+}
+.QPushButton#b_exit:pressed
+{
+	background-color: rgb(85, 87, 83);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>关闭</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_usr">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>80</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(238, 238, 236);
+font: 25 15pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_icon">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/res/my_icon.jpg);
+background-image: url(:/res/test.png);
+border-radius:40px;
+pointer-events: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_hello">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>50</y>
+        <width>71</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(238, 238, 236);
+font: 25 15pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>HELLO!</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>640</y>
+        <width>95</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton::hover{
+
+background-repeat:none;
+background-image: url(:/res/logo_wthie.png);}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="change_icon">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/res/my_icon.jpg);
+border-radius:40px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>change_icon</zorder>
+     <zorder>b_recv</zorder>
+     <zorder>b_write</zorder>
+     <zorder>b_send</zorder>
+     <zorder>b_draft</zorder>
+     <zorder>b_bin</zorder>
+     <zorder>b_favor</zorder>
+     <zorder>b_exit</zorder>
+     <zorder>label_usr</zorder>
+     <zorder>l_icon</zorder>
+     <zorder>label_hello</zorder>
+     <zorder>pushButton</zorder>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(238, 238, 236);</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <layout class="QVBoxLayout" name="Layout_content">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widget_2" native="true">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10px;</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_title">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>13</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Title</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_4" native="true">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10px;</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_sender">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>13</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>sender</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_5" native="true">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10px;</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_time">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>13</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>time</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget" native="true"/>
+         </item>
+         <item>
+          <widget class="QTextBrowser" name="mailcontent">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10px;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_7" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QPushButton" name="b_downloadfile">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">.QPushButton{
+font: 57 13pt &quot;Ubuntu&quot; bold;
+color:white;
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;}
+.QPushButton::hover
+{
+border-style:none;
+border:0px solid #242424;
+color:#DCDCDC;
+background:rgb(136, 138, 133);
+}</string>
+              </property>
+              <property name="text">
+               <string>Download File</string>
+              </property>
+              <property name="icon">
+               <iconset theme="File">
+                <normaloff>res/file (1).png</normaloff>
+                <normalon>res/file (1).png</normalon>
+                <disabledoff>res/file (1).png</disabledoff>
+                <disabledon>res/file (1).png</disabledon>
+                <activeoff>res/file (1).png</activeoff>
+                <activeon>res/file (1).png</activeon>
+                <selectedoff>res/file (1).png</selectedoff>
+                <selectedon>res/file (1).png</selectedon>res/file (1).png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>18</width>
+                <height>18</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">QWidget#widget_6{}
+
+.QLineEdit
+{
+color: rgb(46, 52, 54);
+}</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <property name="spacing">
+                <number>2</number>
+               </property>
+               <property name="leftMargin">
+                <number>150</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="b_favourite">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="contextMenuPolicy">
+                  <enum>Qt::DefaultContextMenu</enum>
+                 </property>
+                 <property name="whatsThis">
+                  <string>收藏</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+QPushButton
+{
+	border-image: url(:/res/favorite.png);
+	background-color: rgb(46, 52, 54);
+border-radius:20px;
+border:10;
+}
+.QPushButton::hover
+{
+	background-color:  rgb(186, 189, 182);
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="b_close">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="whatsThis">
+                  <string>返回</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+QPushButton
+{
+	border-image: url(:/res/close.png);
+	background-color: rgb(46, 52, 54);
+border-radius:20px;
+border:10;
+}
+.QPushButton::hover
+{
+	background-color:  rgb(186, 189, 182);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="b_delete">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="whatsThis">
+                  <string>删除</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+QPushButton
+{
+	border-image: url(:/res/delete.png);
+	background-color: rgb(46, 52, 54);
+border-radius:20px;
+border:10;
+	}
+.QPushButton::hover
+{
+	background-color:  rgb(186, 189, 182);
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="b_forward">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="whatsThis">
+                  <string>转发</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+QPushButton
+{
+	border-image: url(:/res/forward.png);
+	background-color: rgb(46, 52, 54);
+border-radius:20px;
+border:9;
+}
+.QPushButton::hover
+{
+	background-color:  rgb(186, 189, 182);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="b_reply">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="whatsThis">
+                  <string>回复</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+QPushButton
+{
+	border-image: url(:/res/reply.png);
+	background-color: rgb(46, 52, 54);
+border-radius:20px;
+border:12;
+}
+.QPushButton::hover
+{
+	background-color:  rgb(186, 189, 182);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
